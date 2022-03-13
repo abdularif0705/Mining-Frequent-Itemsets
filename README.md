@@ -5,7 +5,7 @@ Project I: Mining Frequent Itemsets
 
 Read the PDF file for Project description
 
-For this project I am using jupyternotebook inside of VSC
+For this project I am using Jupyter Notebook inside of VSC
 
 ## Installation
 first you have to install the libraries with your terminal
