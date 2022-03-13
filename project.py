@@ -10,7 +10,7 @@ print(data_frame)
 data_frame.columns
 # cleaning data if needed
 # Building apriori model
-ao = apriori(pd.DataFrame(data_frame)) # here include your cleaned data_set , min_support = 0.05, use_colnames = True)
+ao = apriori(data_frame, min_support = 0.05, use_colnames = True)
  #the min support is upto requirement
 # any other are also been also implemented as per requirement from here
 
