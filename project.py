@@ -2,14 +2,15 @@
 import numpy as np
 import pandas as pd
 from mlxtend.frequent_patterns import apriori, association_rules
-#loading data
-data = pd.read('retail.txt') #here include your file location
-data.head()
-#exploring to check data
-data.columns
-#cleaning data if needed
-# Building   apriori model
-ao = apriori()#(#here include your cleaned data_set , min_support = 0.05, use_colnames = True)
+# loading text file into pandas DataFrame
+data_frame = pd.read_csv('retail.txt') #here include your file location
+print(data_frame)
+# data.head()
+# exploring to check data
+data_frame.columns
+# cleaning data if needed
+# Building apriori model
+ao = apriori(pd.DataFrame(data_frame)) # here include your cleaned data_set , min_support = 0.05, use_colnames = True)
  #the min support is upto requirement
 # any other are also been also implemented as per requirement from here
 
